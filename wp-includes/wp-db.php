@@ -294,6 +294,7 @@ class wpdb {
 		'posts',
 		'comments',
 		'links',
+		'mfp_input',
 		'options',
 		'postmeta',
 		'terms',
@@ -369,6 +370,15 @@ class wpdb {
 	 * @var string
 	 */
 	public $links;
+
+	/**
+	 * WordPress Options table.
+	 *
+	 * @since 1.5.0
+	 *
+	 * @var string
+	 */
+	public $mfp_input;
 
 	/**
 	 * WordPress Options table.
