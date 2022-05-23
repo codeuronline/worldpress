@@ -1,5 +1,5 @@
 <?php
-require_once plugin_dir_path(__FILE__);
+//require_once plugin_dir_path(__FILE__);
 /**
 * @package formulaire
 * @version 1.7.2
