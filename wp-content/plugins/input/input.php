@@ -1,12 +1,12 @@
 <?php
-// require_once plugin_dir_path(__FILE__);
+require_once plugin_dir_path(__FILE__);
 /**
-* @package input
+* @package formulaire
 * @version 1.7.2
 */
 /*
-Plugin Name: input
-Plugin URI: http://wordpress.org/plugins/input/
+Plugin Name: formulaire
+Plugin URI: http://wordpress.org/plugins/formulaire/
 Description: first try in creating a plugin
 Author: hakime attoumani
 Version: 1.7.2
@@ -30,7 +30,7 @@ function affichage()
 {
 global $wpdb;
 
-$row = $wpdb->get_row( $wpdb->prepare( "SELECT id_input FROM $wpdb->mfp_input WHERE Type = 'text'" ) );
-echo "<pre>",print_r($row),"</pre>";
+// $row = $wpdb->get_row( $wpdb->prepare( "SELECT id_form FROM $wpdb->form_inputs WHERE type_name = 'textarea'" ) );
+echo "<pre>",print_r($wpdb),"</pre>";
 // echo $wpdb->options;
 }
