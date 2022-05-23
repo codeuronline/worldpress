@@ -17,13 +17,17 @@
  require_once '../wp-includes/pluggable.php';
  require_once '../wp-includes/class-wp-query.php';
  
-$objet = new WP_query;
-$objet->get_queried_object();
-$terms = get_terms( array(
+//$objet = new WP_query;
+//$objet->get_queried_object();
+$terms = get_categories( [
     'taxonomy' => 'category',
+    'name'=>  'composition florale',
     'hide_empty' => false,
-) );
+]);
+//$category = get_categories(['name'=>'composition florale']);
+//var_dump($category);
 var_dump($terms);
+
 
 // var_dump($query); --> -->
 // var_dump($result);

@@ -298,6 +298,7 @@ class wpdb {
 		'mfp_champs',
 		'mfp_formulaire',
 		'mfp_valeur',
+		'mftp_liaison',
 		'options',
 		'postmeta',
 		'terms',
@@ -307,9 +308,19 @@ class wpdb {
 		'commentmeta',
 	);
 
+	public $mfp_input =array(
+		'',
+		'type_input'
+	);
+	
+	public $mftp_formulaire =array();
+	public $mfp_champs =array();
+	public $mfp_liaison =array();
+	public $mfp_valeur =array();
 	/**
 	 * List of deprecated WordPress tables.
 	 *
+	 * 
 	 * 'categories', 'post2cat', and 'link2cat' were deprecated in 2.3.0, db version 5539.
 	 *
 	 * @since 2.9.0
@@ -381,7 +392,6 @@ class wpdb {
 	 *
 	 * @var string
 	 */
-	public $mfp_input;
 
 	/**
 	 * WordPress Options table.
