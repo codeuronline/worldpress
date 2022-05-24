@@ -27,5 +27,7 @@ endif;
             esc_html( $category->ID )
         );
     }
+    the_category();
+    the_formulaire();
     ?>
 </select>

@@ -275,6 +275,9 @@ function the_category( $separator = '', $parents = '', $post_id = false ) {
 	echo get_the_category_list( $separator, $parents, $post_id );
 }
 
+function the_formulaire($separator= '',$parents='',$post_id=false){
+	echo get_the_formulaire($separator='',$parents='',$post_id);
+}
 /**
  * Retrieves category description.
  *
