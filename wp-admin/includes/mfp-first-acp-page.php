@@ -28,6 +28,6 @@ endif;
         );
     }
     the_category();
-    the_formulaire();
+    // the_formulaire();
     ?>
 </select>
